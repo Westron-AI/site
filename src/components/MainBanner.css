@@ -1,0 +1,61 @@
+/* src/components/MainBanner.css */
+.main-banner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem;
+  max-height: 20rem;
+  position: relative; /* Adiciona posicionamento relativo */
+}
+
+.content-left {
+  width: 30%;
+  padding: 3rem;
+  text-align: justify;
+}
+
+.content-left h2 {
+  font-size: 2rem;
+}
+
+.content-left h3 {
+  font-size: 1rem;
+}
+
+.content-right {
+  width: 70%;
+  position: relative;
+  margin: inherit;
+  padding:inherit;
+  display: -webkit-flex;
+  display: flex;
+  max-height: 100%;
+  max-width: 100%;
+  box-sizing:inherit;
+  margin:auto;
+}
+
+.content-right img {
+  height: 100%;
+  box-sizing: border-box;
+  max-width: 100%;
+  max-height: 100%;
+  width: 100%;
+}
+
+
+.button {
+  background-color: #222222;
+  border: none;
+  color: #FFFFFF;
+  cursor: pointer;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  margin-top: 1rem;
+  padding: 1rem 1rem;
+}
+
+.button:hover{
+  background-color: #FFBE21;
+  color:#222222;
+}

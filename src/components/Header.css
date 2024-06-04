@@ -1,0 +1,40 @@
+.header {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 5rem;
+    background-color: #FFFFFF;
+    color: #222222;
+}
+
+.logo {
+    margin:0;
+}
+
+.menu ul {
+    list-style-type: none;
+    margin:0;   
+    padding:0;  
+}
+
+.menu ul li{
+    display: inline;
+    margin-left:1.5rem;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.menu ul li:first-child{
+    margin-left:0;
+}
+
+.menu ul li a{
+    color:#222222;
+    text-decoration: none;
+}
+
+.menu ul li a:hover{
+    text-decoration: underline;
+    text-decoration-color:#FFBE21;
+    text-decoration-thickness: 0.3rem;
+}
