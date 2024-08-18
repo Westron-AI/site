@@ -1,0 +1,14 @@
+.text-justify {
+  text-align: justify;
+  margin-bottom:3rem;
+}
+
+.cards {
+  margin: 3rem 0;
+}
+
+.solution-category-button {
+  position: absolute;
+  bottom: 0.5rem; /* Ajuste o espaçamento do fundo conforme necessário */
+  right: 0.5rem; /* Ajuste o alinhamento à direita conforme necessário */
+}

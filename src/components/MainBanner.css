@@ -1,11 +1,10 @@
-/* src/components/MainBanner.css */
 .main-banner {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 2rem;
+  padding: 15rem 2rem;
   max-height: 20rem;
-  position: relative; /* Adiciona posicionamento relativo */
+  position: relative;
 }
 
 .content-left {
@@ -24,25 +23,14 @@
 
 .content-right {
   width: 70%;
-  position: relative;
-  margin: inherit;
-  padding:inherit;
-  display: -webkit-flex;
-  display: flex;
-  max-height: 100%;
-  max-width: 100%;
-  box-sizing:inherit;
-  margin:auto;
+  text-align: right; /* Alinha à direita */
 }
 
 .content-right img {
-  height: 100%;
-  box-sizing: border-box;
-  max-width: 100%;
-  max-height: 100%;
-  width: 100%;
+  max-width: 100%; /* Garante que a imagem não ultrapasse o contêiner */
+  height: auto;
+  margin-right:10%;
 }
-
 
 .button {
   background-color: #222222;
@@ -55,7 +43,7 @@
   padding: 1rem 1rem;
 }
 
-.button:hover{
+.button:hover {
   background-color: #FFBE21;
-  color:#222222;
+  color: #222222;
 }

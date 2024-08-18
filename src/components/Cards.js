@@ -1,33 +1,73 @@
 import React from 'react';
-import { Card, Container, Row, Col } from 'react-bootstrap';
-import image1 from '../assets/images/image1.svg'
-import image2 from    '../assets/images/image2.svg' 
+import { Card, Container, Row, Col, Button } from 'react-bootstrap';
+import image1 from '../assets/images/image1.png';
+import image2 from '../assets/images/image2.png';
+import image3 from '../assets/images/image3.png'; // Importe a imagem image4 aqui
+import './Cards.css';
+
 function Cards() {
   return (
- 
     <section className="cards">
-      <h3>SOLUÇÕES PARA EMPRESAS</h3>
       <Container>
-        <Row>
-          <Col md={6}>
-            <Card>
-              <Card.Img variant='top' src={image1} height='300rem'/>
-              <Card.Body>
-                <Card.Title className="text-center"><strong>Tradução de Documentos PDF</strong></Card.Title>
-                <Card.Text>
-                Tradução precisa e eficiente de documentos PDF. Nossa plataforma mantém o formato e a integridade do conteúdo original, proporcionando uma experiência de tradução sem falhas.
+        <Row className="justify-content-center">
+          {/* Cards para INDIVÍDUOS */}
+          <Col md={3}>
+            <Card className="h-100">
+              <Card.Img variant='top' src={image3} />
+              <Card.Body className="text-center">
+                <Card.Title><strong>Plugin Chrome e Firefox</strong></Card.Title>
+                <Card.Text className="text-justify">
+                  Traduza documentações web de forma rápida e fácil com nossos plugins para Chrome e Firefox.
                 </Card.Text>
+                <Button variant="warning" size="sm" className="solution-category-button">
+                  PARA INDIVÍDUOS
+                </Button>
               </Card.Body>
             </Card>
           </Col>
-          <Col md={6}>
-            <Card>
-              <Card.Img variant='top' src={image2} height='300rem' />
-              <Card.Body>
-                <Card.Title className="text-center"><strong>APIs para Tradução de Sites</strong></Card.Title>
-                <Card.Text>
-                Tradução rápida e precisa de sites. Nossa plataforma preserva o layout e a funcionalidade original, garantindo uma experiência de usuário excelente em todos idiomas. Facilite a internacionalização da sua documentação com a Westron AI. <strong>Temos suporte para Read the Docs!</strong>
+
+          <Col md={3}>
+            <Card className="h-100">
+              <Card.Img variant='top' src={image2} />
+              <Card.Body className="text-center">
+                <Card.Title><strong>Tradução Livre</strong></Card.Title>
+                <Card.Text className="text-justify">
+                  Tradução instantânea de textos com nossa ferramenta de Tradução Livre. 
                 </Card.Text>
+                <Button variant="warning" size="sm" className="solution-category-button">
+                  PARA INDIVÍDUOS
+                </Button>
+              </Card.Body>
+            </Card>
+          </Col>
+
+          {/* Cards para COMUNIDADES */}
+          <Col md={3}>
+            <Card className="h-100">
+              <Card.Img variant="top" src={image1} />
+              <Card.Body className="position-relative">
+                <Card.Title><strong>Tradução de Documentos PDF</strong></Card.Title>
+                <Card.Text className="text-justify">
+                  Tradução precisa e eficiente de documentos PDF. 
+                </Card.Text>
+                <Button variant="warning" size="sm" className="solution-category-button">
+                  PARA COMUNIDADES
+                </Button>
+              </Card.Body>
+            </Card>
+          </Col>
+
+          <Col md={3}>
+            <Card className="h-100">
+              <Card.Img variant="top" src={image2} />
+              <Card.Body className="position-relative">
+                <Card.Title><strong>APIs para Tradução de Sites</strong></Card.Title>
+                <Card.Text className="text-justify">
+                Nossa plataforma preserva o layout e a funcionalidade original. 
+                </Card.Text>
+                <Button variant="warning" size="sm" className="solution-category-button">
+                  PARA COMUNIDADES
+                </Button>
               </Card.Body>
             </Card>
           </Col>
