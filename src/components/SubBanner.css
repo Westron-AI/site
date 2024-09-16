@@ -23,8 +23,8 @@
     text-align: justify;
 }
 
-.right-side-2 h2{
-    text-align:center;
+.right-side-2 h2 {
+    text-align: center;
 }
 
 .right-side {
@@ -32,7 +32,7 @@
     width: 70%;
     flex: 1;
     text-align: right;
-    margin-right:20rem;
+    margin-left:20rem;
 }
 
 .right-side ul {
@@ -44,12 +44,28 @@
     margin-bottom: 1rem;
 }
 
+.right-side li .list-item {
+    display: flex;
+    align-items: center;
+    justify-content:left; /* Alinha os ícones e textos à direita */
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 1rem ;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width:80%
+}
+
+.right-side li .icon{
+    margin-right:1rem; /* Ícone ficará na esquerda do texto */ /* Cor do ícone */
+}
+
 .left-side-2 {
     text-align: center; /* Centraliza horizontalmente o conteúdo do contêiner */
 }
 
 .github-icon {
-    width:15rem;
+    width: 15rem;
     display: block;        /* Garante que a imagem ocupe a largura total disponível e fique acima do botão */
     margin: 0 auto 10px;   /* Centraliza a imagem e adiciona espaço abaixo dela */
 }

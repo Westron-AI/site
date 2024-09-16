@@ -1,0 +1,39 @@
+.contato-container {
+    text-align: left;
+    padding: 1.5rem 5rem;
+    margin: 8.5rem 0;
+}
+
+.contato-texto h2 {
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+}
+
+.contato-texto p {
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+
+.contato-form {
+    background-color: #fff; /* Fundo branco */
+    padding: 2rem 2rem 6rem 2rem; /* Espaçamento interno */
+    border-radius: 15px; /* Cantos arredondados */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Adiciona uma leve sombra para dar destaque */
+    margin-top: 1rem;
+}
+
+.contato-form .form-group {
+    margin-bottom: 1rem;
+}
+
+.submit-button {
+    float: left;
+    background-color: #FFBE21 !important;
+    border-color: #FFBE21 !important;
+    border: none;
+}
+
+.submit-button:hover {
+    background-color: #E6A91E !important;
+}
