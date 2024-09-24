@@ -1,6 +1,8 @@
 import React, {useState} from 'react';
-import { Form, Button, Row, Col } from 'react-bootstrap';
+import { Form, Button, Row, Col} from 'react-bootstrap';
+import Alert from 'react-bootstrap/Alert'
 import emailjs from 'emailjs-com'
+import 'bootstrap/dist/css/bootstrap.min.css';
 import './Contato.css';
 
 function Contato() {
@@ -11,6 +13,9 @@ function Contato() {
         message:''
     })
 
+    const [sucessMessage, setSucessMessage] = useState('');
+    const [errorMessage, setErrorMessage] = useState('');
+    
     const handleChange = (e) => {
         const {name, value} = e.target;
         setFormData({...formData, [name]:value});
@@ -29,9 +34,11 @@ function Contato() {
             },
             'yHo_8HjZJ9f1XIbRU'
         ).then((result) => {
-            alert('Mensagem enviada! Responderemos em até 48 horas.');
+            setSucessMessage('Mensagem enviada! Responderemos em até 48 horas.')
+            setErrorMessage('');
         }, (error) => {
-            alert('Erro ao enviar a mensagem, tente novamente');
+            setErrorMessage('Erro ao enviar a mensagem, tente novamente.');
+            setSucessMessage('');
         });
     };
 
@@ -82,6 +89,7 @@ function Contato() {
                             <Form.Label>Mensagem</Form.Label>
                             <Form.Control 
                                 as="textarea"
+                                className="textarea-message"
                                 rows={4}
                                 placeholder="Digite sua mensagem"
                                 name="message"
@@ -92,6 +100,21 @@ function Contato() {
                             Enviar
                         </Button>
                     </Form>
+
+                    {sucessMessage && (
+                        <Alert variant="success" className="mt-3">
+                            {sucessMessage}
+                        </Alert>
+                    )}
+                    
+                    {
+                        errorMessage && (
+                            <Alert  variant="danger" className="mt-3">
+                                {errorMessage}
+                            </Alert>
+                        )
+                    }
+
                 </Col>
             </Row>
         </div>

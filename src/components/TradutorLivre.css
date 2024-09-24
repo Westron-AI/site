@@ -1,0 +1,39 @@
+.tradutor-container {
+    background-color: #fff; 
+    padding: 1.25rem;
+    border-radius: 1rem;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 4.25rem;
+    margin-bottom: 8.5rem;
+    text-align:left;
+}
+
+.input-texto-traducao {
+    border-radius: 4px;
+    border: 1px solid #ced4da;
+    resize: none;
+}
+
+.output-portugues {
+    background-color: #f8f9fa;
+}
+
+.tradutor-livre-titulo {
+    margin: 2rem 0;
+    text-align: left;
+}
+
+.card {
+    border: none;
+}
+
+.botao-traducao {
+    margin: 0 1.25rem;
+}
+
+.nome-lingua {
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: left; /* Alinha a label à esquerda */
+    margin-bottom: 0.5rem; /* Espaço abaixo da label */
+}

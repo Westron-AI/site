@@ -1,0 +1,128 @@
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7); /* Escurecer o fundo */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.login-modal-content {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px; /* Arredondar os cantos */
+    width: 400px; /* Largura do modal */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Sombra mais suave */
+    position: relative;
+    transition: transform 0.3s ease; /* Animação suave ao abrir/fechar */
+}
+
+.close-button {
+    background: transparent;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    color: #007bff; /* Cor do botão de fechar */
+}
+
+.input-login{
+    margin-bottom: 1rem; /* Espaçamento entre os inputs */
+    padding: 0.75rem; /* Espaçamento interno */
+    border: 1px solid #ccc; /* Borda leve */
+    border-radius: 5px; /* Bordas arredondadas */
+    font-size: 16px; /* Tamanho da fonte */
+}
+
+h2 {
+    margin-bottom: 1.5rem;
+    color: #333; /* Cor do título */
+    text-align: center; /* Centralizar o título */
+}
+
+form {
+    display: flex;
+    flex-direction: column; /* Alinhamento vertical dos inputs */
+}
+
+
+button[type="submit"] {
+    padding: 0.75rem;
+    background-color: #007bff; /* Cor do botão */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px; /* Tamanho da fonte */
+    transition: background-color 0.3s; /* Transição suave */
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3; /* Cor do botão ao passar o mouse */
+}
+
+.success-message {
+    display: flex;
+    align-items: center;
+    color: green;
+    justify-content: center; /* Centralizar mensagem de sucesso */
+    margin-top: 1rem; /* Espaçamento acima */
+}
+
+.error-message {
+    color: red;
+    margin-top: 1rem;
+    text-align: center; /* Centralizar mensagem de erro */
+}
+
+
+
+
+.api-key-box {
+    max-width: 100%;
+    margin: 1rem 0;
+    background: #f8f9fa; /* Fundo da caixa */
+    border: 1px solid #ccc; /* Borda leve */
+    padding: 1rem;
+    border-radius: 5px; /* Bordas arredondadas */
+    text-align: center; /* Centralizar o texto */
+    
+}
+
+.api-key {
+    display: flex;
+    justify-content: space-between; /* Espaçamento entre a chave e o botão */
+    align-items: center; /* Alinhar verticalmente */
+    overflow:hidden;
+    text-overflow: ellipsis;
+}
+
+.api-key span {
+    font-weight: bold; /* Negrito para a chave */
+    color: #333; /* Cor da chave */
+    margin-right: 1rem; /* Espaço entre a chave e o botão */
+}
+
+.api-key button {
+    padding: 0.5rem 1rem;
+    background-color: #007bff; /* Cor do botão */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Transição suave */
+}
+
+.api-key button:hover {
+    background-color: #0056b3; /* Cor do botão ao passar o mouse */
+}
+
+.copy-button{
+    width:100%;
+}

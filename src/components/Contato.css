@@ -18,7 +18,7 @@
 .contato-form {
     background-color: #fff; /* Fundo branco */
     padding: 2rem 2rem 6rem 2rem; /* Espaçamento interno */
-    border-radius: 15px; /* Cantos arredondados */
+    border-radius: 1rem; /* Cantos arredondados */
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Adiciona uma leve sombra para dar destaque */
     margin-top: 1rem;
 }
@@ -36,4 +36,8 @@
 
 .submit-button:hover {
     background-color: #E6A91E !important;
+}
+
+.textarea-message{
+    resize: none;
 }
