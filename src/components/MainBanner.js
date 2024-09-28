@@ -1,19 +1,22 @@
 import React from 'react';
 import './MainBanner.css';
 import banner_image from '../assets/images/banner_image.png';
+import { Button, Container } from 'react-bootstrap';
 
 function MainBanner() {
     return (
-        <section className="main-banner">
-            <div className="content-left">
-                <h2>Democratização do acesso a informação</h2>
-                <h3>A Westron AI torna a tradução de documentações no campo da tecnologia acessível, precisa e eficiente para todos.</h3>
-                <button className='button'>Soluções Disponíveis</button>
-            </div>
-            <div className="content-right">
-                <img src={banner_image} alt="Banner Image" className="banner-image" />
-            </div>
-        </section>
+        <Container>
+            <section className="main-banner">
+                <div className="content-left">
+                    <h2>Tradução de Documentações Técnicas</h2>
+                    <h3>Desenvolvido como parte de um projeto de TCC, este projeto propõe uma prova de conceito de um modelo de IA especializado em tradução automática de documentações técnicas.</h3>
+                    <Button href="/solucoes">Soluções Disponíveis</Button>
+                </div>
+                <div className="content-right">
+                    <img src={banner_image} alt="Banner Image" className="banner-image" />
+                </div>
+            </section>
+        </Container>
     )
 }
 

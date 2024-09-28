@@ -13,7 +13,6 @@ function Footer() {
                     <Col className="d-flex justify-content-end align-items-center">
                         <a href="/contato" className="text-white mx-2">Contato</a>
                         <a href="https://github.com/Westron-AI" className="text-white mx-2">Github</a>
-                        <a href="/docs" className="text-white mx-2">Documentação</a>
                     </Col>
                 </Row>
             </Container>

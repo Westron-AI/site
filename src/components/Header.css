@@ -2,9 +2,10 @@
     display:flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1.5rem 5rem;
     background-color: #FFFFFF;
     color: #222222;
+    padding:2rem 0;
+    margin-bottom:2.5rem;
 }
 
 .logo  {
@@ -38,10 +39,15 @@
 
 .menu ul li a:hover{
     text-decoration: underline;
-    text-decoration-color:#FFBE21;
+    text-decoration-color:#007bff;
     text-decoration-thickness: 0.3rem;
 }
 
 .api-button{
     text-transform: uppercase;
+}
+
+.logo a{
+    color:#222222;
+    text-decoration: none;
 }

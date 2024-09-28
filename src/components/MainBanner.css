@@ -2,19 +2,19 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 15rem 2rem;
+  padding: 15rem 0rem;
   max-height: 20rem;
   position: relative;
 }
 
 .content-left {
-  width: 30%;
-  padding: 3rem;
+  width: 40%;
   text-align: justify;
 }
 
 .content-left h2 {
   font-size: 2rem;
+  text-align: justify;
 }
 
 .content-left h3 {
@@ -22,7 +22,7 @@
 }
 
 .content-right {
-  width: 70%;
+  width: 60%;
   text-align: right; /* Alinha à direita */
 }
 
@@ -33,17 +33,12 @@
 }
 
 .button {
-  background-color: #222222;
   border: none;
   color: #FFFFFF;
   cursor: pointer;
   font-size: 0.9rem;
   text-transform: uppercase;
   margin-top: 1rem;
-  padding: 1rem 1rem;
+  padding: 1rem 0;
 }
 
-.button:hover {
-  background-color: #FFBE21;
-  color: #222222;
-}

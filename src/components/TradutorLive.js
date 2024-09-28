@@ -12,7 +12,7 @@ function TradutorLivre() {
         const token = localStorage.getItem('apiKey'); // Obtenha o token do localStorage
 
         try {
-            const response = await fetch(`http://127.0.0.1:8000/translate?token=${token}`, { // Passando o token na URL
+            const response = await fetch(`http://3.227.1.152:80/translate?token=${token}`, { // Passando o token na URL
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
@@ -44,7 +44,7 @@ function TradutorLivre() {
             <Container className="tradutor-container">
                 <Row>
                     <Col md={6}>
-                        <Card className="mb-3">
+                        <Card className="mb-3 card-traducao">
                             <Card.Body>
                                 <Form>
                                     <Form.Group controlId="textoIngles">
@@ -63,7 +63,7 @@ function TradutorLivre() {
                         </Card>
                     </Col>
                     <Col md={6}>
-                        <Card className="mb-3">
+                        <Card className="mb-3 card-traducao">
                             <Card.Body>
                                 <Form.Group controlId="textoPortugues">
                                     <Form.Label className="nome-lingua">Português</Form.Label>

@@ -9,6 +9,7 @@
 }
 
 .input-texto-traducao {
+    text-align: justify;
     border-radius: 4px;
     border: 1px solid #ced4da;
     resize: none;
@@ -23,7 +24,7 @@
     text-align: left;
 }
 
-.card {
+.card-traducao {
     border: none;
 }
 
@@ -37,3 +38,4 @@
     text-align: left; /* Alinha a label à esquerda */
     margin-bottom: 0.5rem; /* Espaço abaixo da label */
 }
+

@@ -19,8 +19,8 @@ function Cards() {
                 <Card.Text className="text-justify">
                   Traduza documentações web de forma rápida e fácil com nossos plugins para Chrome e Firefox.
                 </Card.Text>
-                <Button variant="warning" size="sm" className="solution-category-button">
-                  PARA INDIVÍDUOS
+                <Button variant="primary" size="sm" className="solution-category-button">
+                  TESTE AGORA
                 </Button>
               </Card.Body>
             </Card>
@@ -34,39 +34,8 @@ function Cards() {
                 <Card.Text className="text-justify">
                   Tradução instantânea de textos com nossa ferramenta de Tradução Livre. 
                 </Card.Text>
-                <Button variant="warning" size="sm" className="solution-category-button">
-                  PARA INDIVÍDUOS
-                </Button>
-              </Card.Body>
-            </Card>
-          </Col>
-
-          {/* Cards para COMUNIDADES */}
-          <Col md={3}>
-            <Card className="h-100">
-              <Card.Img variant="top" src={image1} />
-              <Card.Body className="position-relative">
-                <Card.Title><strong>Tradução de Documentos PDF</strong></Card.Title>
-                <Card.Text className="text-justify">
-                  Tradução precisa e eficiente de documentos PDF. 
-                </Card.Text>
-                <Button variant="warning" size="sm" className="solution-category-button">
-                  PARA COMUNIDADES
-                </Button>
-              </Card.Body>
-            </Card>
-          </Col>
-
-          <Col md={3}>
-            <Card className="h-100">
-              <Card.Img variant="top" src={image2} />
-              <Card.Body className="position-relative">
-                <Card.Title><strong>APIs para Tradução de Sites</strong></Card.Title>
-                <Card.Text className="text-justify">
-                Nossa plataforma preserva o layout e a funcionalidade original. 
-                </Card.Text>
-                <Button variant="warning" size="sm" className="solution-category-button">
-                  PARA COMUNIDADES
+                <Button href="/tradutor-livre" variant="primary" size="sm" className="solution-category-button">
+                  TESTE AGORA
                 </Button>
               </Card.Body>
             </Card>

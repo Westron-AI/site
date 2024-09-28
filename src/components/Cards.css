@@ -4,7 +4,8 @@
 }
 
 .cards {
-  margin: 3rem 0;
+  padding: 6rem 0;
+  background-color: #F4F4F4;
 }
 
 .solution-category-button {
