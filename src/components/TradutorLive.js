@@ -3,6 +3,7 @@ import ModalApiKey from './ModalApiKey';
 import './Header.css';
 import './TradutorLivre.css';
 import { Container, Row, Col, Form, Card, Button } from 'react-bootstrap';
+import { BASE_URL } from '../configs';
 
 function TradutorLivre() {
     const [textoIngles, setTextoIngles] = useState('');
@@ -20,7 +21,7 @@ function TradutorLivre() {
 
 
         try {
-            const response = await fetch(`http://127.0.0.1:80/translate?token=${token}`, { 
+            const response = await fetch(`${BASE_URL}/translate?token=${token}`, { 
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",

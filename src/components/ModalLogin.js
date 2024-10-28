@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { FaCheckCircle } from 'react-icons/fa'; 
 import './ModalLogin.css';
 import { Button, CloseButton } from 'react-bootstrap';
+import { BASE_URL } from '../configs';
 
 const ModalLogin = ({ onClose }) => {
     const [usuario, setUsuario] = useState('');
@@ -14,7 +15,7 @@ const ModalLogin = ({ onClose }) => {
         e.preventDefault();
         
         try {
-            const response = await fetch("http://127.0.0.1:80/login", {
+            const response = await fetch(`${BASE_URL}/login`, {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",

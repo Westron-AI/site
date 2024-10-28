@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { FaCheckCircle } from 'react-icons/fa';
 import './ModalApiKey.css';
 import { Button, CloseButton } from 'react-bootstrap';
+import { BASE_URL } from '../configs';
 
 const ModalApiKey = ({ onClose }) => {
     const [apiKey, setApiKey] = useState('');
@@ -17,7 +18,7 @@ const ModalApiKey = ({ onClose }) => {
         }
 
         try {
-            const response = await fetch(`http://127.0.0.1:80/translate?token=${apiKey}`, {
+            const response = await fetch(`${BASE_URL}/translate?token=${apiKey}`, {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
