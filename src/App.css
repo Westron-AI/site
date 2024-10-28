@@ -1,9 +1,9 @@
-/* Estilos existentes */
+
 .App {
   text-align: center;
   display: flex;
   flex-direction: column;
-  min-height: 100vh; /* Garante que o wrapper ocupe 100% da altura da visualização */
+  min-height: 100vh; 
 }
 
 .App-logo {
@@ -41,9 +41,9 @@
   }
 }
 
-/* Estilos adicionados para garantir que o footer fique colado no final da página */
+
 .content {
-  flex: 1; /* Faz com que o conteúdo se expanda para ocupar o espaço disponível */
+  flex: 1; 
 }
 
 .footer {
@@ -51,5 +51,5 @@
   color: white;
   text-align: center;
   padding: 10px 0;
-  width: 100%; /* Garante que o footer ocupe toda a largura */
+  width: 100%; 
 }
