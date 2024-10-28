@@ -35,7 +35,7 @@
 .nome-lingua {
     text-transform: uppercase;
     font-weight: bold;
-    text-align: left; /* Alinha a label à esquerda */
-    margin-bottom: 0.5rem; /* Espaço abaixo da label */
+    text-align: left; 
+    margin-bottom: 0.5rem; 
 }
 

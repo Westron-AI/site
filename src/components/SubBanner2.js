@@ -6,7 +6,7 @@ import { Container, Button } from 'react-bootstrap';
 function SubBanner2() {
     return (
         <Container>
-            <div className="sub-banner" style={{ padding: '20px' }}>
+            <div className="sub-banner">
                 <div className="left-side-2">
                     <a href="https://github.com/Westron-AI" target='_blank'>
                         <img src={github_icon} class='github-icon'/>

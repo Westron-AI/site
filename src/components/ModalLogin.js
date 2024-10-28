@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { FaCheckCircle } from 'react-icons/fa'; // Importando o ícone de tick
+import { FaCheckCircle } from 'react-icons/fa'; 
 import './ModalLogin.css';
 import { Button, CloseButton } from 'react-bootstrap';
 
@@ -7,14 +7,14 @@ const ModalLogin = ({ onClose }) => {
     const [usuario, setUsuario] = useState('');
     const [senha, setSenha] = useState('');
     const [error, setError] = useState('');
-    const [success, setSuccess] = useState(false); // Novo estado para mensagem de sucesso
-    const [apiKey, setApiKey] = useState(''); // Estado para armazenar a chave da API
+    const [success, setSuccess] = useState(false); 
+    const [apiKey, setApiKey] = useState(''); 
 
     const handleLogin = async (e) => {
         e.preventDefault();
         
         try {
-            const response = await fetch("http://3.227.1.152:80/login", {
+            const response = await fetch("http://127.0.0.1:80/login", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
@@ -27,10 +27,9 @@ const ModalLogin = ({ onClose }) => {
             }
 
             const data = await response.json();
-            setApiKey(data.access_token); // Supondo que a chave da API vem no formato { access_token: "sua-chave-aqui" }
-            setSuccess(true); // Exibir mensagem de sucesso
+            setApiKey(data.access_token); 
+            setSuccess(true); 
             
-            // Salvar a chave da API no localStorage
             localStorage.setItem('apiKey', data.access_token);
 
         } catch (err) {
@@ -40,14 +39,14 @@ const ModalLogin = ({ onClose }) => {
 
     const handleCopy = () => {
         navigator.clipboard.writeText(apiKey);
-        alert("Chave copiada para a área de transferência!"); // Mensagem de confirmação
+        alert("Chave copiada para a área de transferência!"); 
     };
 
     return (
         <div className="modal-overlay">
             <div className="login-modal-content">
                 <CloseButton className="close-button" onClick={onClose}/>
-                <h2>Login</h2>
+                <h2 className="login-title">Login</h2>
                 {success ? (
                     <div>
                         <div className="success-message">

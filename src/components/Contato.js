@@ -62,6 +62,7 @@ function Contato() {
                                             name="firstName"
                                             value={formData.firstName}
                                             onChange={handleChange}
+                                            required
                                         />
                                     </Form.Group>
                                 </Col>
@@ -73,20 +74,23 @@ function Contato() {
                                             placeholder="Digite seu último nome"
                                             name="lastName"
                                             value={formData.lastName}
-                                            onChange={handleChange} />
+                                            onChange={handleChange} 
+                                            required
+                                            />
                                     </Form.Group>
                                 </Col>
                             </Row>
-                            <Form.Group controlId="formEmail" className="mt-3">
+                            <Form.Group controlId="formEmail" >
                                 <Form.Label>Email</Form.Label>
                                 <Form.Control 
                                     type="email"
                                     placeholder="Digite seu email"
                                     name="email"
                                     value={formData.email}
-                                    onChange={handleChange} />
+                                    onChange={handleChange} 
+                                    required/>
                             </Form.Group>
-                            <Form.Group controlId="formMessage" className="mt-3">
+                            <Form.Group controlId="formMessage">
                                 <Form.Label>Mensagem</Form.Label>
                                 <Form.Control 
                                     as="textarea"
@@ -95,7 +99,8 @@ function Contato() {
                                     placeholder="Digite sua mensagem"
                                     name="message"
                                     value={formData.message}
-                                    onChange={handleChange} />
+                                    onChange={handleChange} 
+                                    required/>
                             </Form.Group>
                             <Button  type="submit" className=" submit-button ">
                                 Enviar

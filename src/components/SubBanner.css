@@ -33,7 +33,7 @@
 .right-side li .list-item {
     display: flex;
     align-items: center;
-    justify-content:left; /* Alinha os ícones e textos à direita */
+    justify-content:left; 
     background-color: #fff;
     border: 1px solid #ccc;
     padding: 1rem 0 ;
@@ -42,21 +42,21 @@
 }
 
 .right-side li .icon{
-    margin-right:1rem; /* Ícone ficará na esquerda do texto */ /* Cor do ícone */
+    margin-right:1rem; 
 }
 
 .left-side-2 {
-    text-align: center; /* Centraliza horizontalmente o conteúdo do contêiner */
+    text-align: center; 
 }
 
 .github-icon {
     width: 15rem;
-    display: block;        /* Garante que a imagem ocupe a largura total disponível e fique acima do botão */
-    margin: 0 auto 1rem;  /* Centraliza a imagem e adiciona espaço abaixo dela */
+    display: block;        
+    margin: 0 auto 1rem;  
 }
 
 .button {
-    display: inline-block; /* Centraliza o botão como um bloco, mantendo-o abaixo da imagem */
+    display: inline-block; 
 }
 
 .right-side-content{
@@ -64,3 +64,33 @@
     width:80%;
     float:right;
 }
+
+@media (max-width: 767px) {
+    .sub-banner {
+      flex-direction: column; 
+      align-items: center;
+      text-align: center; 
+      padding:1rem;
+    }
+  
+    .left-side-2,
+    .right-side-2 {
+      padding: 2rem 0; 
+      width: 100%; 
+    }
+  
+    .github-icon {
+      width: 10rem; 
+      margin-bottom: 1rem; 
+    }
+  
+    .button {
+      margin-bottom: 2rem; 
+    }
+  
+    .right-side-content {
+      width: 100%; 
+      float: none; 
+    }
+  }
+  

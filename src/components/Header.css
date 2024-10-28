@@ -1,53 +1,54 @@
 .header {
-    display:flex;
+    display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: #FFFFFF;
     color: #222222;
-    padding:2rem 0;
-    margin-bottom:2.5rem;
-}
-
-.logo  {
-    font-size:2rem;
-    margin:0;
-    color: #222222;
-
+    margin-bottom: 2.5rem;
+    margin-top:2rem;
 }
 
 .menu ul {
     list-style-type: none;
-    margin:0;   
-    padding:0;  
+    margin: 0;
+    padding: 0;
 }
 
-.menu ul li{
+.menu ul li {
     display: inline;
-    margin-left:1.5rem;
+    margin-left: 1.5rem;
     text-transform: uppercase;
     font-weight: bold;
 }
 
-.menu ul li:first-child{
-    margin-left:0;
+.menu ul li:first-child {
+    margin-left: 0;
 }
 
-.menu ul li a{
-    color:#222222;
+.menu ul li a {
+    color: #222222;
     text-decoration: none;
 }
 
-.menu ul li a:hover{
+.menu ul li a:hover {
     text-decoration: underline;
-    text-decoration-color:#007bff;
+    text-decoration-color: #007bff;
     text-decoration-thickness: 0.3rem;
 }
 
-.api-button{
+.api-button {
     text-transform: uppercase;
 }
 
 .logo a{
-    color:#222222;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #222222;
     text-decoration: none;
 }
+
+.api-button {
+    text-transform: uppercase;
+    margin-left: 1rem;
+}
+

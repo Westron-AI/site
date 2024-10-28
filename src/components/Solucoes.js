@@ -8,7 +8,7 @@ function Individuos() {
         <Container>
             <div className="funcoes-container">
 
-                {/* Plugin de Tradução para Chrome e Firefox */}
+                {}
                 <Row className="topico-funcoes">
                     <Col>
                         <h3 className="titulo-interface">Plugin de Tradução para Chrome e Firefox</h3>
@@ -16,13 +16,13 @@ function Individuos() {
                             Este plugin permite que você traduza rapidamente qualquer trecho de uma página da web do inglês para o 
                             português com apenas um clique.
                         </p>
-                        <Button variant="primary" className='botao-solicitacao-acesso' href="/solicitar-plugin">
-                            Solicitar Acesso
+                        <Button variant="primary" className='botao-solicitacao-acesso' >
+                            Download
                         </Button>
                     </Col>
                 </Row>
 
-                {/* Tradutor Livre */}
+                {}
                 <Row className="topico-funcoes">
                     <Col>
                         <h3 className="titulo-interface">Tradutor Livre</h3>

@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import ModalApiKey from './ModalApiKey'; 
 import './Header.css';
 import './TradutorLivre.css';
 import { Container, Row, Col, Form, Card, Button } from 'react-bootstrap';
@@ -7,28 +8,35 @@ function TradutorLivre() {
     const [textoIngles, setTextoIngles] = useState('');
     const [textoPortugues, setTextoPortugues] = useState('');
     const [error, setError] = useState('');
+    const [showModal, setShowModal] = useState(false); 
 
     const traduzirTexto = async () => {
-        const token = localStorage.getItem('apiKey'); // Obtenha o token do localStorage
+        const token = localStorage.getItem('apiKey'); 
+
+        if (!token || token=="null") {
+            setShowModal(true); 
+            return;
+        }
+
 
         try {
-            const response = await fetch(`http://3.227.1.152:80/translate?token=${token}`, { // Passando o token na URL
+            const response = await fetch(`http://127.0.0.1:80/translate?token=${token}`, { 
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
                     "accept": "application/json"
                 },
-                body: JSON.stringify({ texto_ingles: textoIngles }), // Enviando o texto
+                body: JSON.stringify({ texto_ingles: textoIngles }), 
             });
 
             if (!response.ok) {
-                const errorData = await response.json(); // Obter resposta de erro
-                throw new Error(errorData.detail || "Falha na tradução!"); // Usar mensagem de erro da API
+                const errorData = await response.json(); 
+                throw new Error(errorData.detail || "Falha na tradução!");
             }
 
             const data = await response.json();
             console.log(data)
-            setTextoPortugues(data['tradução'].texto_portugues); // Atualiza o texto traduzido
+            setTextoPortugues(data['tradução'].texto_portugues)
 
         } catch (err) {
             setError("Erro ao traduzir o texto. Verifique sua conexão ou tente novamente.");
@@ -80,8 +88,10 @@ function TradutorLivre() {
                     </Col>
                 </Row>
                 <Button variant="primary" className="botao-traducao" onClick={traduzirTexto}>Traduzir</Button>
-                {error && <div className="error-message">{error}</div>} {/* Mensagem de erro */}
+                {error && <div className="error-message">{error}</div>}
             </Container>
+
+            {showModal && <ModalApiKey onClose={() => setShowModal(false)} />} {}
         </div>
     );
 }
