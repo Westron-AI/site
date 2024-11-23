@@ -17,8 +17,8 @@ O site do Westron AI foi desenvolvido para ser o ponto central de informações 
 Para começar, clone o repositório do Westron AI para o seu ambiente local:
 
 ```bash
-git clone https://github.com/usuario/westron-ai.git
-cd westron-ai
+git clone https://github.com/Westron-AI/site.git
+cd site
 ```
 
 ### 2. Instalando as Dependências
